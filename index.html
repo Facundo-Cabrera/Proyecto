@@ -13,10 +13,11 @@
             <H2>FLC</H2>
         </div>
         <nav>
-            <a href="">Home</a>
-            <a href="">Portfolio</a>
-            <a href="">About Me</a>
-            <a href="">Testimonials</a>
+            <a href="">Inicio</a>
+            <a href="">Portafolio</a>
+            <a href="">Acerca de mí
+            </a>
+            <a href="">Testimonios</a>
         </nav>
         <a href="" class="contact-button">Contact Me</a>
     </header>
@@ -78,8 +79,72 @@
             </div>
         </div>
     </section>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contactame</h2>
+            <p>Cargue sus datos aqui </p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="texto" id="Nombre" name="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellido">Apellido</label>
+                        <input type="texto" id="Apellido" name="Apellido" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numero de Telefono</label>
+                        <input type="telefono" id="Telefono" name="Telefono">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tema">Elige un tema</label>
+                    <select id="tema" name="tema" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="Consulta">Consulta general</option>
+                        <option value="Apoyo">Apoyo</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="Mensaje" name="Mensaje" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="términos">Acepto los términos</label>
+                </div>
+                <div class="form-group">
+                    <button type="">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    <footer></footer>
+    <footer class="footer">
+        <div ><h2>FLC</h2></div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Acerca de mí</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Testimonios</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="img/facebook_icon.png" alt="Facebook" width="20"></a>
+            <a href="#"><img src="img/instagram_icon.png" alt="Instagram" width="20"></a>
+            <a href="#"><img src="img/twitter_bird_icon.png" alt="Twitter" width="20"></a>
+        </div>
+    </footer>
+    
 
 </body>
 </html>
