@@ -1,0 +1,111 @@
+/* Estilos para teléfonos (pantallas de hasta 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .contact-button {
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .hamburger span {
+        background-color: blueviolet;
+        border-radius: 2px;
+        display: block;
+        height: 4px;
+        margin: 4px 0;
+        width: 25px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+/* Estilos para tabletas (pantallas de 600px a 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .form-group {
+        width: 48%;
+    }
+}
+
+/* Estilos para escritorios pequeños (pantallas de 900px a 1200px) */
+@media (min-width: 900px) and (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .form-group {
+        width: 48%;
+    }
+}
+
+/* Estilos para escritorios grandes (pantallas mayores a 1200px) */
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .form-group {
+        width: 48%;
+    }
+}
+

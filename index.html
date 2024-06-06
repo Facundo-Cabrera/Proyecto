@@ -6,94 +6,114 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .hamburger span {
+            background-color: blueviolet;
+            border-radius: 2px;
+            display: block;
+            height: 4px;
+            margin: 4px 0;
+            width: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <div>
-            <H2>FLC</H2>
+            <h2>FLC</h2>
         </div>
-        <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
             <a href="">Inicio</a>
             <a href="">Portafolio</a>
-            <a href="">Acerca de mí
-            </a>
+            <a href="">Acerca de mí</a>
             <a href="">Testimonios</a>
         </nav>
         <a href="" class="contact-button">Contact Me</a>
     </header>
-    <section >
+
+    <section>
         <div class="intro-container">
             <div class="intro-image">
-            <img src="" alt="">
+                <img src="" alt="">
             </div>
             <div class="intro-text">
-                <p>Hola,Yo soy Facundo Cabrera</p>
-                <h1>Soy un programador web full stack junior </h1>
-                <p>"Este es mi primer Portafolio , usando lo aprendido en clases de programcion web full stack , cusado en la UTN visto en clases y usando material extra y usando un ejemplo de portafolio de Behance"
-                </p>
+                <p>Hola, Yo soy Facundo Cabrera</p>
+                <h1>Soy un programador web full stack junior</h1>
+                <p>"Este es mi primer Portafolio, usando lo aprendido en clases de programación web full stack, cursado en la UTN visto en clases, usando material extra y usando un ejemplo de portafolio de Behance"</p>
                 <a href="" class="btn">Ponte en Contacto</a>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class=>
-            <h2> Mis Hablidades </h2>
-            <h3> Mi experiencia </h3>
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Mis Habilidades</h2>
+            <h3>Mi experiencia</h3>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <img src="img/visual-design.png" alt="Visual and Interaction Design Icon">
-                    <h4>Visual and Interaction Design</h4>
-                    <p>Create designs that balance aesthetics and functionality, ensuring a cohesive user experience.</p>
+                    <img src="img/visual-design.png" alt="Data Analytics">
+                    <h4>Data Analytics</h4>
+                    <p>Proceso de recopilar y analizar muchos datos del cliente para extraer conclusiones sobre patrones de comportamientos, intereses personales y tendencias de compra</p>
                 </div>
                 <div class="skill-card">
-                    <img src="img/user-centered-design.png" alt="User-Centered Design Icon">
-                    <h4>User-Centered Design</h4>
-                    <p>Conduct research to develop personas and user flows, guiding both visual and functional design decisions.</p>
+                    <img src="img/sql.png" alt="SQL">
+                    <h4>MySQL y SQL Server</h4>
+                    <p>Manejo de la herramienta SQL para trabajo y preyoctos de datos</p>
                 </div>
                 <div class="skill-card">
-                    <img src="img/Architecture.png" alt="Information Architecture and Visual Hierarchy Icon">
-                    <h4>Information Architecture and Visual Hierarchy</h4>
-                    <p>Organize content logically and use visual hierarchy principles to guide user attention effectively.</p>
+                    <img src="img/Power-bi.png" alt="PowerBI">
+                    <h4>PowerBI</h4>
+                    <p>Manejo de la herramienta Power BI para visualización de datos</p>
                 </div>
-                
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="about-me">
         <div class="container">
             <div class="image">
                 <img src="perfil2.jpg" alt="Foto de perfil">
             </div>
             <div class="content">
                 <h2>Acerca de mi</h2>
-                <p>Soy una persona que le gusta y le   apasiona la tecnología que siempre busca algo nuevo para
-                aprender, soy de aprendizaje rápido y de buena
-                    memoria siempre me comprometo con mis
-                    deberes cumpliendo en tiempo y forma.
-                    Lo que me hace especial es mi Integridad en los
-                    que se destaca el ser honesto y ético en todas mis
-                    acciones y decisiones, mi responsabilidad ,
-                    solidaridad y mi aprendizaje continuo</p>
+                <p>Soy una persona que le gusta y le apasiona la tecnología que siempre busca algo nuevo para aprender, soy de aprendizaje rápido y de buena memoria siempre me comprometo con mis deberes cumpliendo en tiempo y forma. Lo que me hace especial es mi integridad en los que se destaca el ser honesto y ético en todas mis acciones y decisiones, mi responsabilidad, solidaridad y mi aprendizaje continuo.</p>
             </div>
         </div>
     </section>
-    
+
     <section id="contact">
         <div class="contact-container">
             <h2>Contactame</h2>
-            <p>Cargue sus datos aqui </p>
+            <p>Cargue sus datos aquí</p>
             <form>
                 <div class="form-row">
                     <div class="form-group">
                         <label for="Nombre">Nombre</label>
-                        <input type="texto" id="Nombre" name="Nombre" required>
+                        <input type="text" id="Nombre" name="Nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="Apellido">Apellido</label>
-                        <input type="texto" id="Apellido" name="Apellido" required>
+                        <input type="text" id="Apellido" name="Apellido" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -102,14 +122,14 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Numero de Telefono</label>
-                        <input type="telefono" id="Telefono" name="Telefono">
+                        <label for="phone">Número de Teléfono</label>
+                        <input type="tel" id="Telefono" name="Telefono">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="tema">Elige un tema</label>
                     <select id="tema" name="tema" required>
-                        <option value="" disabled selected>Selecione...</option>
+                        <option value="" disabled selected>Seleccione...</option>
                         <option value="Consulta">Consulta general</option>
                         <option value="Apoyo">Apoyo</option>
                         <option value="feedback">Feedback</option>
@@ -121,16 +141,16 @@
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="terminos" name="terminos" required>
-                    <label for="términos">Acepto los términos</label>
+                    <label for="terminos">Acepto los términos</label>
                 </div>
                 <div class="form-group">
-                    <button type="">Enviar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <footer class="footer">
+    <<footer class="footer">
         <div ><h2>FLC</h2></div>
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
@@ -139,13 +159,18 @@
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Testimonios</a></li>
         </ul>
-        <div class="social-icons">
+        <div class="iconos">
             <a href="#"><img src="img/facebook_icon.png" alt="Facebook" width="20"></a>
             <a href="#"><img src="img/instagram_icon.png" alt="Instagram" width="20"></a>
             <a href="#"><img src="img/twitter_bird_icon.png" alt="Twitter" width="20"></a>
         </div>
     </footer>
-    
 
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
