@@ -1,3 +1,6 @@
+body{
+    background-color: #f4f1ff;
+}
 /* Inicio de mi header */
 *::after {
     box-sizing: border-box;
@@ -308,4 +311,5 @@ button:hover {
 .footer .social-icons a {
     text-decoration: none;
     color: #000;
-    margin: 0 5px;
+    margin: 0 5px; 
+}
