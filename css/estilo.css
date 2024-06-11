@@ -1,5 +1,6 @@
 body{
     background-color: #f4f1ff;
+    
 }
 /* Inicio de mi header */
 *::after {
@@ -44,6 +45,28 @@ nav a:hover {
     color: white;
 }
 
+.hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .hamburger span {
+            background-color: blueviolet;
+            border-radius: 2px;
+            display: block;
+            height: 4px;
+            margin: 4px 0;
+            width: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hamburger {
+                display: flex;
+            }
+        }
+
 /* Fin de haeder */
 
 /* Css section 1 */
@@ -65,9 +88,10 @@ nav a:hover {
 }
 
 .intro-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
+    width: 400px;
+    height: 450px;
+    border-radius: auto;
+    align-items: center
 }
 
 .intro-text {
