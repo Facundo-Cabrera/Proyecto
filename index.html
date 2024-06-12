@@ -194,16 +194,24 @@
             <li><a href="#">Testimonios</a></li>
         </ul>
         <div class="iconos">
-            <a href="#"><img src="img/facebook_icon.png" alt="Facebook" width="20"></a>
-            <a href="#"><img src="img/instagram_icon.png" alt="Instagram" width="20"></a>
-            <a href="#"><img src="img/twitter_bird_icon.png" alt="Twitter" width="20"></a>
+            <a href="#" onclick="abrirPagina('https://www.facebook.com')"><img src="img/facebook_icon.png" alt="Facebook" width="20"></a>
+            <a href="#" onclick="abrirPagina('https://www.instagram.com')"><img src="img/instagram_icon.png" alt="Instagram" width="20"></a>
+            <a href="#" onclick="abrirPagina('https://twitter.com')"><img src="img/twitter_bird_icon.png" alt="Twitter" width="20"></a>
         </div>
+    
     </footer>
 
+    <!-- Menu -->
     <script>
         function toggleMenu() {
             const nav = document.getElementById('nav');
             nav.classList.toggle('active');
+        }
+    </script>
+    <!-- Footer -->
+    <script>
+        function abrirPagina(url) {
+            window.open(url, '_blank');
         }
     </script>
 </body>
